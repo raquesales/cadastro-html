@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald:wght@200;400;500&display=swap"
+        rel="stylesheet">
+    <title> Formulário</title>
+
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome"> Nome: </label>
+            <!--for serve p/ dizer que o label pertence ao input de id nome tb.-->
+            <br>
+            <!--Ou coloca tudo dentro do label... dá na mesma-->
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
+            <br><br>
+
+            <label>
+                Email:
+                <br>
+                <input type="email" name="email" placeholder="Digite seu email" required />
+                <br><br>
+            </label>
+            <label>
+                Idade:
+                <br>
+                <input type="number" name="idade" style="width: 40px;" min="12" required />
+                <br><br>
+            </label>
+            <label>
+                Data de Nascimento:
+                <br>
+                <input type="date" name="data" required />
+                <br><br>
+            </label>
+            <label>
+                Onde você possui conta?
+                <br>
+                <input type="checkbox" name="facebook" />
+                Facebook
+                <input type="checkbox" name="instagram" />
+                Instagram
+                <input type="checkbox" name="youtube" />
+                YouTube
+                <br><br>
+            </label>
+            <label>
+                Sexo:
+                <br>
+                <input type="radio" name="genero" value="masc" />
+                Masculino
+                <input type="radio" name="genero" value="fem" />
+                Feminino
+            </label>
+            <br><br>
+            <label>
+                Cor dos olhos:
+                <input type="color" name="cor" />
+            </label>
+            <br><br>
+            <label>
+                Biografia:
+                <br>
+                <textarea name="bio" placeholder="Fale sobre você." style="width: 400px; height: 100px;"></textarea>
+            </label>
+            <br><br>
+            <label>
+                Foto do perfil:
+                <br>
+                <input type="file" accept="image/*" name="foto" />
+            </label>
+            <br><br>
+            <label>
+                Telefone:
+                <br>
+                <input type="tel" name="tel" />
+            </label>
+            <br><br>
+            <label>
+                Link do perfil do Facebook:
+                <br>
+                <input type="url" name="url" />
+            </label>
+            <br><br>
+            <label>
+                Senha:
+                <br>
+                <input type="password" name="senha" minlength="6" maxlength="8" required />
+            </label>
+            <br><br>
+            <button type="reset" name="reset">Limpar</button>
+            <button type="submit" name="limpar">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
